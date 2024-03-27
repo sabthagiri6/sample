@@ -1,17 +1,37 @@
 ﻿Architecture: windows_x64
 Built-Using: nipkg
 CompatibilityVersion: 240000
-Description: mycompany-myproduct
+Depends: ni-labview-2021-runtime-engine (>=21.1.2.49154-0+f2)
+Description: community-classdamplifier
+  Measurements for Class D amplifiers using MeasurementLink
+DisplayName: Class D Amplifier MeasurementLink Plug-In
+Filename: community-classdamplifier_1.0.0.20_windows_x64.nipkg
+Homepage: https://github.com/NI-MeasurementLink-Plug-Ins/class-d-amplifier
+MD5sum: ce0057cd4d4ea9f71d4dfa629163ff3b
+Maintainer: GitHub Community <email@mycompany.com>
+Package: community-classdamplifier
+Plugin: file
+Section: Add-Ons
+Size: 168032218
+StoreProduct: yes
+UserVisible: yes
+Version: 1.0.0.20
+VisibleForRuntimeDeployment: no
+
+Architecture: windows_x64
+Built-Using: nipkg
+CompatibilityVersion: 240000
+Description: ni-refarchtest
 DisplayName: Test
-Filename: mycompany-myproduct_1.0.0.2_windows_x64.nipkg
-MD5sum: ea66cb51ef333aae09f0ca18b8040e7b
-Maintainer: MyCompany <email@mycompany.com>
-Package: mycompany-myproduct
+Filename: ni-refarchtest_1.0.0.3_windows_x64.nipkg
+MD5sum: 124ec52fa219275e6b82d0febccf19d6
+Maintainer: NI <sabthagiri.murugan@ni.com>
+Package: ni-refarchtest
 Plugin: file
 Section: Application Software
-Size: 17911092
+Size: 17911100
 StoreProduct: no
 UserVisible: yes
-Version: 1.0.0.2
+Version: 1.0.0.3
 VisibleForRuntimeDeployment: no
 
