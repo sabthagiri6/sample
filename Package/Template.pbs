@@ -1,0 +1,239 @@
+﻿<Solution xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/NationalInstruments.PackageBuilder.Engine">
+    <Name>Template</Name>
+    <SourceItems>
+        <SourceItem z:Id="i2">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\builds\Test\Template\Libraries\Linux\liblabview_grpc_server.so</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i3">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\builds\Test\Template\Libraries\LinuxRT\liblabview_grpc_server.so</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i4">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\builds\Test\Template\Libraries\Win32\labview_grpc_server.dll</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i5">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\builds\Test\Template\Libraries\Win64\labview_grpc_server.dll</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i6">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\builds\Test\Template\Measurement UI.vi</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i7">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\builds\Test\Template\niwebserver.conf</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i8">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\builds\Test\Template\Template.aliases</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i9">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\builds\Test\Template\Template.exe</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i10">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\builds\Test\Template\Template.ini</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i11">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\builds\Test\Template\Template.lvlib</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i12">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\builds\Test\Template\Template.serviceconfig</RelativePath>
+            <DependentItems />
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i13">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\builds\Test\Template\Libraries\Linux</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i2" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i14">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\builds\Test\Template\Libraries\LinuxRT</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i3" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i15">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\builds\Test\Template\Libraries\Win32</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i4" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i16">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\builds\Test\Template\Libraries\Win64</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i5" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i17">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\builds\Test\Template\Libraries</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i13" />
+                <SourceItem z:Ref="i14" />
+                <SourceItem z:Ref="i15" />
+                <SourceItem z:Ref="i16" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+        <SourceItem z:Id="i18">
+            <PluginConfigurationOptions />
+            <RelativePath>..\src\builds\Test\Template</RelativePath>
+            <DependentItems>
+                <SourceItem z:Ref="i6" />
+                <SourceItem z:Ref="i7" />
+                <SourceItem z:Ref="i8" />
+                <SourceItem z:Ref="i9" />
+                <SourceItem z:Ref="i10" />
+                <SourceItem z:Ref="i11" />
+                <SourceItem z:Ref="i12" />
+                <SourceItem z:Ref="i17" />
+            </DependentItems>
+            <IsDiscoverable>true</IsDiscoverable>
+        </SourceItem>
+    </SourceItems>
+    <InputSourceItems>
+        <SourceItem z:Ref="i18" />
+    </InputSourceItems>
+    <Distributions>
+        <Distribution z:Id="i19" i:type="Package">
+            <DistributionItems />
+            <Name>Test</Name>
+            <OutputDirectory>Packages</OutputDirectory>
+            <PluginConfigurationOptions />
+            <PrebuildAnalysisEnabled>true</PrebuildAnalysisEnabled>
+            <Architecture>windows_x64</Architecture>
+            <AutoIncrementVersion>Build</AutoIncrementVersion>
+            <BuildStatus z:Id="i20">
+                <FileName />
+                <Version>none</Version>
+            </BuildStatus>
+            <CompanyName>MyCompany</CompanyName>
+            <CustomExecutes />
+            <DisplayName>Test</DisplayName>
+            <FileName>mycompany-myproduct_1.0.0.0_windows_x64.nipkg</FileName>
+            <MaintainerEmail>email@mycompany.com</MaintainerEmail>
+            <MaintainerName>MyCompany</MaintainerName>
+            <Messages xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+            <PackageName>mycompany-myproduct</PackageName>
+            <PackageRelationships />
+            <ProductName>MyProduct</ProductName>
+            <Section>Application Software</Section>
+            <Synopsis>mycompany-myproduct</Synopsis>
+            <Version>1.0.0.0</Version>
+        </Distribution>
+    </Distributions>
+    <Feeds>
+        <Feed z:Id="i21" i:type="PackageInstaller">
+            <Configurable>false</Configurable>
+            <Enabled>false</Enabled>
+            <Name>TestPackage</Name>
+            <Products />
+            <Uri>PackageInstallers</Uri>
+            <Description i:nil="true" />
+        </Feed>
+    </Feeds>
+    <DistributionGroups>
+        <DistributionGroup z:Id="i22">
+            <Distributions>
+                <Distribution z:Ref="i19" />
+            </Distributions>
+            <Name>Distribution Group</Name>
+            <PrebuildAnalysisEnabled>true</PrebuildAnalysisEnabled>
+            <StageDirectory>ProcessingStage</StageDirectory>
+        </DistributionGroup>
+    </DistributionGroups>
+    <TestStandMode>true</TestStandMode>
+    <PluginConfigurationOptions>
+        <ConfigurationOption z:Id="i23">
+            <Definition z:Id="i24">
+                <Description i:nil="true" />
+                <Name>TestStand Options</Name>
+            </Definition>
+            <HasDefaultValues>true</HasDefaultValues>
+            <Value z:Id="i25" i:type="DialogConfigurationOptionValue">
+                <Values>
+                    <ConfigurationOptionValue z:Id="i26" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i27" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i28" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i29" i:type="StringConfigurationOptionValue">
+                        <Value />
+                    </ConfigurationOptionValue>
+                    <ConfigurationOptionValue z:Id="i30" i:type="StringConfigurationOptionValue">
+                        <Value>SupportVIs</Value>
+                    </ConfigurationOptionValue>
+                    <ConfigurationOptionValue z:Id="i31" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i32" i:type="StringConfigurationOptionValue">
+                        <Value />
+                    </ConfigurationOptionValue>
+                    <ConfigurationOptionValue z:Id="i33" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i34" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i35" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i36" i:type="BooleanConfigurationOptionValue">
+                        <Value>true</Value>
+                    </ConfigurationOptionValue>
+                    <ConfigurationOptionValue z:Id="i37" i:type="BooleanConfigurationOptionValue">
+                        <Value>true</Value>
+                    </ConfigurationOptionValue>
+                    <ConfigurationOptionValue z:Id="i38" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i39" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i40" i:type="PathConfigurationOptionValue">
+                        <RelativePath />
+                    </ConfigurationOptionValue>
+                    <ConfigurationOptionValue z:Id="i41" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i42" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i43" i:type="StringConfigurationOptionValue">
+                        <Value>[BootVolume]</Value>
+                    </ConfigurationOptionValue>
+                    <ConfigurationOptionValue z:Id="i44" i:type="StringConfigurationOptionValue">
+                        <Value />
+                    </ConfigurationOptionValue>
+                    <ConfigurationOptionValue z:Id="i45" i:type="StringConfigurationOptionValue">
+                        <Value />
+                    </ConfigurationOptionValue>
+                    <ConfigurationOptionValue z:Id="i46" i:type="StringConfigurationOptionValue">
+                        <Value />
+                    </ConfigurationOptionValue>
+                    <ConfigurationOptionValue z:Id="i47" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i48" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i49" i:type="BooleanConfigurationOptionValue" />
+                    <ConfigurationOptionValue z:Id="i50" i:type="BooleanConfigurationOptionValue" />
+                </Values>
+            </Value>
+        </ConfigurationOption>
+    </PluginConfigurationOptions>
+</Solution>
